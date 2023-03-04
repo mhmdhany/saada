@@ -1,0 +1,128 @@
+.main {
+  padding-bottom: 70px;
+  position: relative;
+}
+.main::before {
+  content: "";
+  position: absolute;
+  width: 56.56px;
+  height: 56.74px;
+  background-image: url("/src/assets/imgs/gift14.png");
+  left: 0;
+  top: 36px;
+  z-index: -1;
+}
+.main::after {
+  content: "";
+  position: absolute;
+  width: 86.27px;
+  height: 91.29px;
+  background-image: url("/src/assets/imgs/gift12.png");
+  right: 0;
+  top: 414px;
+  z-index: -1;
+}
+.card-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.card-content {
+  background: linear-gradient(
+    180deg,
+    rgba(250, 181, 189, 0.29) 0%,
+    rgba(214, 166, 167, 0.29) 0.01%,
+    rgba(216, 195, 207, 0.29) 48.96%,
+    rgba(217, 218, 238, 0.29) 100%
+  );
+  border-radius: 30px;
+  width: calc(50% - 15px);
+  padding: 0;
+  transition: 0.5s;
+}
+@media screen and (max-width: 768px) {
+  .card-content {
+    width: 100%;
+    text-align: center;
+  }
+}
+.card-content img {
+  transition: 0.5s;
+}
+.card-content img:hover {
+  transform: scale(0.95);
+}
+.grad-gifts,
+.marri-gifts {
+  margin-bottom: 30px;
+}
+.grad-gifts img {
+  width: 430.03px;
+  height: 359.76px;
+  object-fit: cover;
+}
+.marri-gifts img {
+  width: 341.08px;
+  height: 357.77px;
+  object-fit: cover;
+}
+.overlay::before {
+  content: "";
+  position: absolute;
+  width: 92.24px;
+  height: 87.22px;
+  background-image: url("/src/assets/imgs/gift16.png");
+  left: 0;
+  top: 678px;
+  z-index: -1;
+}
+.overlay::after {
+  content: "";
+  position: absolute;
+  width: 56.31px;
+  height: 63.65px;
+  background-image: url("/src/assets/imgs/gift10.png");
+  right: -0;
+  top: 955px;
+  z-index: -1;
+}
+.overlay2::before {
+  content: "";
+  position: absolute;
+  width: 92.68px;
+  height: 92.71px;
+  background-image: url("/src/assets/imgs/gift7.png");
+  left: 0;
+  top: 1840px;
+  z-index: -1;
+}
+.overlay2::after {
+  content: "";
+  position: absolute;
+  width: 69.72px;
+  height: 55.52px;
+  background-image: url("/src/assets/imgs/gift11.png");
+  right: 0;
+  top: 1860px;
+  z-index: -1;
+}
+.overlay3::before {
+  content: "";
+  position: absolute;
+  width: 92.82px;
+  height: 112.8px;
+  background-image: url("/src/assets/imgs/gift4.png");
+  right: 0;
+  top: 1404px;
+  z-index: -1;
+}
+.overlay3::after {
+  content: "";
+  position: absolute;
+  width: 73px;
+  height: 78.85px;
+  background-image: url("/src/assets/imgs/enba.png");
+  left: 0;
+  top: 1315px;
+  z-index: -1;
+}

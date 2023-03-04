@@ -1,0 +1,141 @@
+.hero {
+  background-color: var(--bgColor);
+  display: flex;
+  padding-top: 115px;
+  padding-bottom: 240px;
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  .hero {
+    padding-bottom: 190px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hero {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .hero {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero {
+    padding-top: 35px;
+    padding-bottom: 20px;
+  }
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: ellipse(71% 59% at 50% 40%);
+  background-color: var(--bgColor);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  bottom: -120px;
+  z-index: -1;
+}
+@media screen and (max-width: 370px) {
+  .hero::after {
+    top: 110px;
+  }
+}
+.hero .hero-text {
+  margin-right: 35px;
+  position: relative;
+  z-index: 2;
+}
+.hero .hero-text h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 66px;
+  color: white;
+  width: 568px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .hero .hero-text h1 {
+    width: fit-content;
+    font-size: 46px;
+  }
+}
+.hero-text h1::before {
+  content: "";
+  position: absolute;
+  width: 166.36px;
+  height: 178.4px;
+  background-image: url("../../assets/imgs/gift1.png");
+  background-repeat: no-repeat;
+  left: -300px;
+  top: -40px;
+  z-index: -1;
+}
+@media screen and (max-width: 992px) {
+  .hero-text h1::before {
+    left: 0;
+    top: 0;
+  }
+}
+.hero-text h1::after {
+  content: "";
+  position: absolute;
+  width: 166.36px;
+  height: 178.4px;
+  background-image: url("../../assets/imgs/gift2.png");
+  background-repeat: no-repeat;
+  right: 1100px;
+  top: 0;
+  display: none;
+  z-index: -1;
+}
+@media screen and (min-width: 1400px) {
+  .hero-text h1::after {
+    display: block;
+  }
+}
+.hero-text .choose-btn {
+  padding: 14px 63px;
+  background-color: var(--yelow);
+  border-radius: 28px;
+  text-align: center;
+  color: var(--bgColor);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 50px;
+  transition: 0.5s;
+}
+.choose-btn:hover {
+  color: var(--yelow);
+  background-color: var(--bgColor);
+  border: 1px solid var(--yelow);
+}
+.hero .bg {
+  position: absolute;
+  top: 230px;
+  left: 0;
+}
+@media screen and (max-width: 992px) {
+  .hero .bg {
+    top: 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero .bg {
+    top: 100px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .hero .bg {
+    top: 220px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .hero .bg {
+    top: 350px;
+  }
+}

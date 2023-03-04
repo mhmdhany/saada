@@ -1,0 +1,30 @@
+.customCard .card-text {
+  margin: 126px 0;
+  margin-right: 72px;
+}
+@media screen and (max-width: 992px) {
+.customCard .card-text {
+    margin: 76px auto;
+    padding: 0 20px;
+  }
+}
+.customCard .card-text h3 {
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 32px;
+color: var(--main-color);
+}
+@media screen and (max-width: 992px) {
+  .customCard .card-text h3 {
+    font-size: 38px;
+    line-height: 45px;
+    }
+  }
+.customCard .card-text p {
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+color: var(--main-color);
+padding-top: 25px;
+}

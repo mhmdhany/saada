@@ -1,0 +1,128 @@
+.navbar-toggler-icon {
+  background-image: var(--navbar-toggler-icon-bg);
+}
+.navbar-content {
+  background-color: var(--bgColor);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.navbar-toggler {
+  border: 0;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+  border: 1px solid var(--bgColor);
+}
+.navbar-content .contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid #7b39fb;
+}
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+@media screen and (max-width: 992px) {
+  .navbar .contact-icons a {
+    padding: 10px;
+    border: 1px solid var(--yelow);
+    border-radius: 50%;
+    line-height: 10px;
+    transition: 0.3s;
+  }
+  .navbar .contact-icons a:hover {
+    transform: translateY(-5px);
+  }
+}
+.contact-icons a img {
+  width: 16px;
+  height: 16px;
+}
+.contact .contact-text {
+  display: flex;
+  gap: 16px;
+  font-size: 16px;
+  font-white: 500;
+  line-height: 24px;
+}
+.contact-text .custom-border {
+  border: 1px solid #7b39fb;
+}
+.contact-text a {
+  color: white;
+}
+.contact-text a:hover {
+  color: var(--yelow);
+}
+.contact-text a span {
+  margin-right: 8px;
+}
+.navbar-nav {
+  margin-top: 16px;
+  gap: 40px;
+  padding: 0;
+}
+@media screen and (max-width: 1200px) {
+  .navbar-nav {
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    padding-right: 0;
+  }
+}
+.navbar-nav .nav-link {
+  position: relative;
+  color: white;
+  padding: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #f4b512;
+}
+.navbar-nav .nav-link.active::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 49px;
+  height: 14px;
+  background-image: url("/src/assets/imgs/active-link.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (max-width: 992px) {
+  .navbar-nav .nav-link.active::after {
+    top: 35px;
+  }
+}
+.logo {
+  position: absolute;
+  top: -40px;
+  padding: 0 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  background-color: var(--bgColor);
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    top: 20px;
+    left: 70px;
+  }
+}
+.saada-mobile img {
+  height: 80px;
+}

@@ -1,0 +1,131 @@
+.about {
+  padding: 70px 0;
+  padding-bottom: 350px;
+  position: relative;
+}
+.about::after {
+  content: "";
+  position: absolute;
+  width: 70.08px;
+  height: 107.45px;
+  background-image: url("/src/assets/imgs/gift8.png");
+  right: 0;
+  top: 210px;
+  z-index: -1;
+}
+.about::before {
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 91.64px;
+  background-image: url("/src/assets/imgs/gift6.png");
+  left: 0;
+  bottom: 400px;
+  z-index:-1;
+}
+.about .about-main .title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+  color: var(--main-color);
+}
+@media screen and (max-width: 992px) {
+  .about .about-main .title {
+    text-align: center;
+  }
+}
+.box-img {
+  margin-top: 48px;
+  transition: 0.5s;
+}
+.box-img:hover {
+  box-shadow: 0 24px 44px 0 rgb(20 20 43 / 4%);
+  transform: translate(0, -6px);
+}
+.about-cards {
+  margin-right: 63px;
+}
+.about-cards .card-left {
+  text-align: left;
+}
+.card-left .desc {
+  margin-right: auto;
+  width: 200px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--description);
+  text-align: start;
+  padding: 30px 30px 0 0;
+}
+.readMore {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #6821f4;
+  position: relative;
+  margin-top: 38px;
+  margin-bottom: 30px;
+  padding-right: 170px;
+}
+@media screen and (max-width: 1400px) {
+  .readMore {
+    padding-right: 0;
+  }
+}
+.readMore::after {
+  content: "";
+  position: absolute;
+  width: 111px;
+  height: 111px;
+  background-image: url("/src/assets/imgs/Arrow_05.png");
+  left: -120px;
+  top: 0;
+}
+@media screen and (max-width: 992px) {
+  .readMore::after {
+    left: -120px;
+    transform: rotate(-55deg);
+  }
+}
+@media screen and (max-width: 500px) {
+  .readMore::after {
+    top: -50px;
+    left: -10px;
+    transform: rotate(15deg);
+  }
+}
+.about-cards .card-right {
+  margin-top: 30px;
+}
+.card-co {
+  padding-left: 172px;
+}
+@media screen and (max-width: 425px) {
+  .card-co {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .about-cards .card-co {
+    text-align: right;
+  }
+}
+.card-co p {
+  padding-right: 170px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: var(--description);
+  margin-top: 30px;
+}
+@media screen and (max-width: 1400px) {
+  .card-co p {
+    padding-right: 0;
+  }
+}

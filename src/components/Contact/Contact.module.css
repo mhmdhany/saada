@@ -1,0 +1,160 @@
+.contacts {
+  position: relative;
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  clip-path: ellipse(90% 59% at 49% 60%);
+  background: linear-gradient(
+    45deg,
+    rgba(129, 70, 246, 0.05) 2.76%,
+    rgba(241, 69, 55, 0.05) 88.55%
+  );
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  bottom: 0;
+  z-index: -1;
+}
+@media screen and (max-width: 1200px) {
+  .contacts::before {
+    height: 110%;
+    clip-path: ellipse(115% 59% at 50% 60%);
+  }
+}
+@media screen and (max-width: 600px) {
+  .contacts::before {
+    height: 107%;
+    clip-path: ellipse(167% 59% at 50% 60%);
+  }
+}
+.contacts .contact-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 148px;
+  position: relative;
+  z-index: 3;
+}
+@media screen and (max-width: 1200px) {
+  .contacts .contact-main {
+    justify-content: center;
+    gap: 40px;
+  }
+}
+.contact-main .contact-info {
+  display: flex;
+  gap: 50px;
+}
+@media screen and (max-width: 768px) {
+  .contact-main .contact-info {
+    gap: 10px;
+  }
+}
+.contact-info .contact-text .title {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  background: linear-gradient(65.18deg, #8146f6 13.77%, #f14537 77.6%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact-text .description {
+  width: 515px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: var(--main-color);
+  margin-top: 30px;
+}
+@media screen and (max-width: 768px) {
+  .contact-text .description {
+    width: fit-content;
+  }
+}
+.contact-content {
+  padding: 128px 0;
+  position: relative;
+  overflow: hidden;
+}
+.contact-content::before {
+  content: "";
+  position: absolute;
+  background-image: url("/src/assets/imgs/shadow.png");
+  background-repeat: no-repeat;
+  width: 7%;
+  height: 100%;
+  z-index: 1;
+}
+.contact-content::after {
+  content: "";
+  position: absolute;
+  background-image: url("/src/assets/imgs/shadow2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.contact-imgs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 85px;
+  position: relative;
+}
+.contact-imgs::after {
+  content: "";
+  position: absolute;
+  width: 70.08px;
+  height: 107.45px;
+  background-image: url("/src/assets/imgs/gift8.png");
+  right: 0;
+  bottom: -140px;
+}
+.contact-imgs::before {
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 91.64px;
+  background-image: url("/src/assets/imgs/gift6.png");
+  left: 0;
+  bottom: -140px;
+}
+.contact-imgs img {
+  width: 190px;
+  height: 255px;
+  position: relative;
+}
+.contact-imgs img:nth-child(even) {
+  margin-top: 170px;
+}
+@media screen and (max-width: 768px) {
+  .contact-imgs img:nth-child(even) {
+    margin-top: 0;
+  }
+}
+.contact-content .insta-btn {
+  background-image: url("/src/assets/imgs/insta.png");
+  border-radius: 12px;
+  margin: auto;
+  margin-top: 48px;
+  width: 150px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: 0.5s;
+}
+.contact-content .insta-btn:hover {
+  transform: scale(1.1);
+}

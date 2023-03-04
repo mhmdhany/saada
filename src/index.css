@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Norsal";
+  src: url("/src/assets/fonts/alfont_com_NorsalGX.ttf") format("truetype");
+}
+:root {
+  --main-color:#242424;
+  --bgColor: #6821f4;
+  --description: #333333;
+  --yelow: #f4b512;
+  --navbar-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+body {
+  font-family: 'Norsal',Sans-serif;
+  margin: 0;
+  direction: rtl;
+}
+a {
+  text-decoration: none;
+}
+
